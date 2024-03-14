@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: brown;
+    color: white;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Здесь начался мейн  */
+
+main {
+    flex: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a,
+.up {
+
+    padding: 5px 15px;
+    color: wheat;
+    border: solid 2px wheat;
+    border-radius: 3 px;
+}
+
+nav a:hover,
+.up:hover {
+    background-color: wheat;
+    color: brown;
+}
+
+.logo {
+    color: wheat;
+}
+
+.block {
+    background-color: wheat;
+    color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.block:hover a {
+    /* при наведении на ссылку теряется яркость */
+    filter: brightness(.4);
+}
+
+.block a:hover {
+    /* при наведении на блок яркость возвращается  */
+    filter: brightness(1);
+}
+
+.homework_list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* wrap если элемент не помещается на странице он перемещается на новую строку
+ */
+}
+
+
+.homework_list a  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    background-color: brown;
+    border-radius: 3px;
+    padding: 10px 0;
+    color: wheat;
+}
